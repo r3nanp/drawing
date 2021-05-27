@@ -1,11 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import './index.css'
+import './styles/index.css'
 import App from './App'
+import { DrawProvider } from './contexts/DrawContext'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <DrawProvider>
+      <App />
+    </DrawProvider>
   </React.StrictMode>,
   document.getElementById('root')
 )
