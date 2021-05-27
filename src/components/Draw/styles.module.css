@@ -1,0 +1,14 @@
+.canvas {
+  border: 1px solid black;
+  cursor: pointer;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  -webkit-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.19);
+  box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.19);
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-tap-highlight-color: transparent;
+  display: inline-block;
+  vertical-align: top;
+}
