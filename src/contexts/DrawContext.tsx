@@ -18,7 +18,7 @@ export const DrawContext = React.createContext({} as DrawContextData)
 
 export function DrawProvider({ children }: ProviderProps) {
   const canvasRef = React.useRef<HTMLCanvasElement>(null)
-  const contextRef = React.useRef<any>(null)
+  const contextRef = React.useRef<CanvasRenderingContext2D | null>(null)
   const [isDrawing, setIsDrawing] = React.useState(false)
 
   const prepareCanvas = () => {
@@ -43,10 +43,10 @@ export function DrawProvider({ children }: ProviderProps) {
   const clearCanvas = () => {}
 
   const startDrawing = ({ nativeEvent }: React.MouseEvent) => {
-    const { clientX, clientY } = nativeEvent
+    const { offsetX, offsetY } = nativeEvent
 
     contextRef.current?.beginPath()
-    contextRef.current?.moveTo(clientX, clientY)
+    contextRef.current?.moveTo(offsetX, offsetY)
 
     setIsDrawing(true)
   }
@@ -58,11 +58,11 @@ export function DrawProvider({ children }: ProviderProps) {
   }
 
   const draw = ({ nativeEvent }: React.MouseEvent) => {
-    const { clientX, clientY } = nativeEvent
+    const { offsetX, offsetY } = nativeEvent
 
     if (!isDrawing) return
 
-    contextRef.current?.lineTo(clientX, clientY)
+    contextRef.current?.lineTo(offsetX, offsetY)
     contextRef.current?.stroke()
   }
 
