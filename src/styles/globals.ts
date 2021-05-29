@@ -19,6 +19,10 @@ export const GlobalStyles: GlobalStyleComponent<
     box-sizing: border-box;
   }
 
+  button {
+    cursor: pointer;
+  }
+
   body, html {
     ${({ theme }) => css`
       background: ${theme.colors.primary};
