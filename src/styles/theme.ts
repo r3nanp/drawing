@@ -5,7 +5,8 @@ export const theme = {
     primary: '#f1f2f5',
     black: '#121214',
     blue: '#2aa9e0',
-    purple: '#6633cc'
+    purple: '#6633cc',
+    pink: '#FF69B4'
   },
   fonts: {
     family:
