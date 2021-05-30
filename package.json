@@ -1,10 +1,29 @@
 {
   "name": "drawing",
   "version": "0.0.0",
+  "license": "MIT",
+  "author": "Renan Pereira <renanmol87@gmail.com>",
+  "keywords": [
+    "r3nanp",
+    "drawing-app",
+    "canvas-app",
+    "draws"
+  ],
+  "bugs": {
+    "url": "https://github.com/r3nanp/drawing/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r3nanp/drawing"
+  },
+  "engines": {
+    "node": ">= 12.x"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "prettier:write": "prettier --write './src/**/*.{ts,tsx}'"
   },
   "dependencies": {
     "react": "^17.0.0",
