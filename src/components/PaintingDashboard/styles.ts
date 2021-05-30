@@ -59,37 +59,37 @@ export const Dashboard = styled.div`
   gap: 1rem;
 
   > button {
-  ${({ theme }) => css`
-    padding: 1rem;
-    border-radius: 5px;
-    border: 0;
-    box-shadow: ${theme.shadow.normal};
+    ${({ theme }) => css`
+      padding: 1rem;
+      border-radius: 5px;
+      border: 0;
+      box-shadow: ${theme.shadow.normal};
 
-    transition: filter 0.3s;
+      transition: filter 0.3s;
 
-    &:hover {
-      filter: brightness(0.875);
-    }
+      &:hover {
+        filter: brightness(0.875);
+      }
 
-    &:nth-child(1) {
-      background: red;
-    }
+      &:nth-child(1) {
+        background: red;
+      }
 
-    &:nth-child(2) {
-      background: ${theme.colors.blue};
-    }
+      &:nth-child(2) {
+        background: ${theme.colors.blue};
+      }
 
-    &:nth-child(3) {
-      background: ${theme.colors.purple};
-    }
+      &:nth-child(3) {
+        background: ${theme.colors.purple};
+      }
 
-    &:nth-child(4) {
-      background: ${theme.colors.black};
-    }
+      &:nth-child(4) {
+        background: ${theme.colors.black};
+      }
 
-    &:nth-child(5) {
-      background: ${theme.colors.purple};
-    }
-  `}
+      &:nth-child(5) {
+        background: ${theme.colors.pink};
+      }
+    `}
   }
 `

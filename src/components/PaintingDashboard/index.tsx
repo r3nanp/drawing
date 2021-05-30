@@ -17,7 +17,7 @@ export const PaintingDashboard = () => {
         <button onClick={() => changeColor('#2aa9e0')}></button>
         <button onClick={() => changeColor('#6633cc')}></button>
         <button onClick={() => changeColor('black')}></button>
-        <button onClick={() => changeColor('pink')}></button>
+        <button onClick={() => changeColor('#FF69B4')}></button>
       </S.Dashboard>
       <div className="clear">
         <button className="clear-canvas" onClick={clearCanvas}>
