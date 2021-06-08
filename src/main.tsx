@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import App from './App'
-
-import { DrawProvider } from './contexts/DrawContext'
 import { ThemeProvider } from 'styled-components'
+
+import App from './App'
+import { DrawProvider } from './contexts/DrawContext'
 import { theme } from './styles/theme'
 import { GlobalStyles } from './styles/globals'
 
