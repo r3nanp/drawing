@@ -81,7 +81,7 @@ export function DrawProvider({ children }: ProviderProps) {
     contextRef.current?.stroke()
   }
 
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     prepareCanvas()
   }, [color])
 

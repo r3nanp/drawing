@@ -19,6 +19,14 @@ export const Container = styled.aside`
   top: 0;
   right: 0;
 
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 5rem;
+    flex-direction: row;
+    position: fixed;
+    bottom: 0;
+  }
+
   .clear {
     display: grid;
     place-items: center;
@@ -49,6 +57,10 @@ export const Container = styled.aside`
 export const TopContent = styled.div`
   display: grid;
   place-items: center;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const Dashboard = styled.div`
