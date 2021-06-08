@@ -5,6 +5,7 @@ An app written in React and Vite with HTML Canvas API. Use to draw, based on gar
 
 ![license mit](https://img.shields.io/github/license/r3nanp/drawing?color=blue&label=LICENSE&logo=github&style=for-the-badge)
 ![r3nanp](https://img.shields.io/badge/powered%20by-React-blue?style=for-the-badge&logo=react)
+[![style: styled-components](https://img.shields.io/badge/style-%F0%9F%92%85%20styled--components-orange.svg?colorB=daa357&colorA=db748e&style=for-the-badge)](https://github.com/styled-components/styled-components)
 ![prs](https://img.shields.io/static/v1?label=PRs&message=welcome&style=for-the-badge&color=24B36B&labelColor=000000)
 
 ## ⚒ Technologies used
