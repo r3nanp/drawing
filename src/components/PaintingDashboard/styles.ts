@@ -25,6 +25,7 @@ export const Container = styled.aside`
     flex-direction: row;
     position: fixed;
     bottom: 0;
+    left: 0;
   }
 
   .clear {
@@ -37,12 +38,14 @@ export const Container = styled.aside`
 
         height: 2.5rem;
         padding: 1rem;
-        background: ${theme.colors.blue};
+        background: ${theme.colors.red};
         color: ${theme.colors.primary};
+        box-shadow: ${theme.shadow.normal};
         border: 0;
         border-radius: 5px;
+
         font-size: 1rem;
-        box-shadow: ${theme.shadow.normal};
+        font-weight: 700;
 
         transition: filter 0.3s;
 
@@ -84,7 +87,7 @@ export const Dashboard = styled.div`
       }
 
       &:nth-child(1) {
-        background: red;
+        background: ${theme.colors.red};
       }
 
       &:nth-child(2) {
