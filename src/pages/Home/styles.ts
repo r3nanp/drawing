@@ -43,8 +43,17 @@ export const Content = styled.section`
       border-radius: 5px;
 
       background: ${theme.colors.blue};
+      color: ${theme.colors.white};
+
+      font-size: 1.2rem;
+      font-weight: 800;
       width: 100%;
       padding: 1rem;
+      transition: filter 0.3s;
+
+      &:hover {
+        filter: brightness(0.875);
+      }
     }
   `}
 `
