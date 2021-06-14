@@ -1,37 +1,26 @@
 import styled, { css } from 'styled-components'
 
 export const Container = styled.aside`
-  width: 25rem;
-  height: 100vh;
-
   ${({ theme }) => css`
+    width: 25rem;
+    height: 100vh;
+
     background: ${theme.colors.primary};
     border-left: 1px dashed ${theme.colors.black};
-  `}
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 
-  z-index: 50;
+    z-index: 50;
 
-  position: fixed;
-  top: 0;
-  right: 0;
-
-  @media screen and (max-width: 768px) {
-    width: 100%;
-    height: 5rem;
-    flex-direction: row;
     position: fixed;
-    bottom: 0;
-    left: 0;
-  }
+    top: 0;
+    right: 0;
 
-  .clear {
-    display: grid;
-    place-items: center;
-    ${({ theme }) => css`
+    .clear {
+      display: grid;
+      place-items: center;
       .clear-canvas {
         display: flex;
         align-items: center;
@@ -53,8 +42,8 @@ export const Container = styled.aside`
           filter: brightness(0.875);
         }
       }
-    `}
-  }
+    }
+  `}
 `
 
 export const TopContent = styled.div`
