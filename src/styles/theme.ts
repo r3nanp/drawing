@@ -6,7 +6,9 @@ export const theme = {
     blue: '#2aa9e0',
     purple: '#6633cc',
     pink: '#FF69B4',
-    red:  '#ff0021'
+    red:  '#ff0021',
+    gray: '#dcdde0',
+    text: '#71717a'
   },
   fonts: {
     family:
