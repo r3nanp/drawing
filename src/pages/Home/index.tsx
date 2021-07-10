@@ -21,7 +21,7 @@ export default function Home() {
         </div>
 
         <S.Content>
-          <Link to="/app">
+          <Link to="/drawing">
             <button>Get started</button>
           </Link>
 
