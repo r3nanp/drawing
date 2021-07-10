@@ -1,16 +1,16 @@
 import * as React from 'react'
 
-interface DrawContextData {
+type DrawContextData = {
   canvasRef: React.RefObject<HTMLCanvasElement>
   stopDrawing: () => void
   clearCanvas: () => void
   prepareCanvas: () => void
   changeColor: (color: string) => void
-  startDrawing: ({ nativeEvent }: React.MouseEvent) => void
-  draw: ({ nativeEvent }: React.MouseEvent) => void
+  startDrawing: (props: React.MouseEvent) => void
+  draw: (props: React.MouseEvent) => void
 }
 
-interface ProviderProps {
+type ProviderProps = {
   children: React.ReactNode
 }
 
