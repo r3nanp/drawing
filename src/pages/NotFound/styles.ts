@@ -23,6 +23,11 @@ export const LeftSide = styled.div`
     line-height: 1.5rem;
     letter-spacing: 0.0875rem;
   }
+
+  img {
+    width: 7rem;
+    height: 7rem;
+  }
 `
 
 export const RightSide = styled.div`
